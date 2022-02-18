@@ -1,0 +1,340 @@
+*{padding: 0; margin:0; box-sizing: border-box; font-family: sans-serif;}
+body{
+	display: flex;
+	overflow: hidden;
+}
+.left{
+	z-index: -2;
+	width: 50%;
+	height: 100vh;
+	background: rgba(45, 52, 54,1.0);
+}
+.right{
+	z-index: -2;
+	width: 50%;
+	height: 100vh;
+	background: rgba(45, 52, 54,0.9);
+}
+#cup{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-25%,-50%);
+}
+
+
+
+
+nav{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 50px;
+}
+
+#search{
+	margin-right: 50px;
+}
+.h-text{
+	position: absolute;
+	color: white;
+	top: 20%;
+	left: 15%;
+	letter-spacing: 5px;
+	font-size: 30px;
+
+}
+.t-left{
+	position: absolute;
+	color: white;
+	left: 5%;
+	bottom: 15%;
+	max-width: 400px;
+	padding-left: 50px;
+	border-left: 5px solid orange;
+}
+.t-left p{
+	color: white;
+	margin-top: 10px;
+}
+
+.t-right{
+	position: absolute;
+	color: white;
+	right:0;
+	bottom: 15%;
+	max-width: 400px;
+	padding-right: 50px;
+}
+.t-right p{
+	color: grey;
+	margin-top: 10px;
+}
+.l-box{
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	bottom: 12%;
+	background: rgba(0,0,0,0.2);
+	z-index: -1;
+}
+.r-box{
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	bottom: 10%;
+	right: 0;
+	background: rgba(0,0,0,0.2);
+	z-index: -1;
+}
+
+
+#ice{
+	position: relative;
+	top: 500px;
+	left: 300px;
+	transform: translate(-25%,-50%);
+}
+.menu>a {
+border: 2px brown;
+padding: 5px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: large;
+text-decoration: none;
+text-align: center;
+color: #3f51b5;
+	
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+a:-webkit-any-link {
+	color: webketlink;
+	cursor: pointer;
+ }
+ .menu{
+	font-family: 'Source Sans Pro', sans-serif;
+	 
+ }
+.menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	min-height: 50vh;
+
+}
+.btn-1{
+	width: 200px;
+	height: 50px;
+	border: 1px solid #3f51b5;
+	color: brown;
+	border-radius: 20px;
+	outline: none;
+	transition: ease out 0.3s; 
+	font-size: 2rem;
+	font-family: Arial;
+	font-weight: bold;
+	border: 3px solid  #3f51b5;
+	position: relative;
+	z-index: 1;
+	justify-content: space-between;
+	margin: 10px; 
+	
+
+
+}
+.btn-1:hover{
+	color: black;
+	cursor: pointer;
+	/*border-radius: 0px;*/
+
+}
+.btn-1::before{
+	transition: 0.5s all ease;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 50%;
+	bottom: 0%;
+	opacity: 0%;
+	content: "";
+	background-color: aqua;
+
+
+
+}
+.btn-1:hover::before{
+	transform: 0.5s all ease;
+	left: 0;
+	right: 0;
+	opacity: 1;
+	z-index: -1;
+	margin: 3px;
+	padding: 3px;
+
+}
+
+
+
+.btn-2{
+	width: 200px;
+	height: 50px;
+	border: 1px solid #3f51b5;
+	color: brown;
+	border-radius: 20px;
+	transition: ease out 0.3s; 
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: Arial;
+	outline: none;
+	border: 3px solid #3f51b5;
+	position: relative;
+	z-index: 1;
+	margin: 10px;
+
+
+}
+.btn-2:hover{
+	color: black;
+	cursor: pointer;
+
+}
+.btn-2::before{
+	transition: 0.5s all ease;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 50%;
+	bottom: 0%;
+	opacity: 0%;
+	content: "";
+	background-color: aqua;
+	margin: 3px;
+	padding: 3px;
+
+
+
+
+}
+.btn-2:hover::before{
+	transform: 0.5s all ease;
+	left: 0;
+	right: 0;
+	opacity: 1;
+	z-index: -1;
+
+}
+
+.btn-3{
+	width: 200px;
+	height: 50px;
+	border: 1px solid #3f51b5;
+	color: brown;
+	border-radius: 30px;
+	outline: none;
+	transition: ease out 0.3s; 
+	font-size: 2rem;
+	font-family: Arial;
+	font-weight: bold;
+	border: 3px solid #3f51b5;
+	position: relative;
+	z-index: 1;
+	margin: 10px;
+
+
+}
+.btn-3:hover{
+	color: black;
+	cursor: pointer;
+
+}
+.btn-3::before{
+	transition: 0.5s all ease;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 50%;
+	bottom: 0%;
+	opacity: 0%;
+	content: "";
+	background-color: aqua;
+	margin: 3px;
+	padding: 3px;
+
+
+
+
+}
+.btn-3:hover::before{
+	transform: 0.5s all ease;
+	left: 0;
+	right: 0;
+	opacity: 1;
+	z-index: -1;
+
+}
+.btn-4{
+	width: 200px;
+	height: 50px;
+	border: 2px solid #3f51b5;
+	color: brown;
+	border-radius: 30px;
+	outline: none;
+	transition: ease out 0.3s; 
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: Arial;
+	border: 3px solid #3f51b5;
+	position: relative;
+	z-index: 1;
+	margin: 10px;
+
+
+}
+.btn-4:hover{
+	color: black;
+	cursor: pointer;
+
+}
+.btn-4::before{
+	transition: 0.5s all ease;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 50%;
+	bottom: 0%;
+	opacity: 0%;
+	content: "";
+	background-color: aqua;
+	margin: 3px;
+	padding: 3px;
+	display: flex;
+
+
+
+
+}
+.btn-4:hover::before{
+	transform: 0.5s all ease;
+	left: 0;
+	right: 0;
+	opacity: 1;
+	z-index: -1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
